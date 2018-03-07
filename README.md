@@ -1,8 +1,8 @@
 How to install:
 using centos 7, get packaging situated:
 install packaging
-yum --enablerepo=extras install epel-release
-yum install -y python-virtualenv python-pip httpd mariadb-server firewalld mod_wsgi
+- yum --enablerepo=extras install -y epel-release
+- yum install -y python-virtualenv python-pip httpd mariadb-server firewalld mod_wsgi git
 
 copy files into place
 cp -a bropenapp/srv/bropenstack.com /srv/
