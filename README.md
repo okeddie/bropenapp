@@ -33,7 +33,7 @@ AH00543: httpd: bad user name bro
 
 Also, if you get index issues, ensure that your apache config has the virtualhost name the same as domain. 
 - for staging.domain.com you'd have
-- <VirtualHost staging.domain.com:80>
+- VirtualHost staging.domain.com:80
 
 If mysql is installed, can simply use the start app script:
 - [root@pyxis-api01 bropenapp]# ./enable_flask.sh
