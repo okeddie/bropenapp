@@ -24,12 +24,16 @@ Copy apache config:
 disable selinux:
 - setenforce 0
 
-Ensure apache config'd user matches in case of error: \n
+Ensure apache config'd user matches in case of error:
 Oct 07 08:59:24 domainblahblah polkitd[504]: Unregistered Authentication Agent for unix-process:1241:5152
 [root@pyxis-api01 ~]# httpd -S
 AH00543: httpd: bad user name bro
 
 - useradd -s /sbin/nologin bro
+
+Also, if you get index issues, ensure that your apache config has the virtualhost name the same as domain. 
+- for staging.domain.com you'd have
+- <VirtualHost staging.domain.com:80>
 
 If mysql is installed, can simply use the start app script:
 - [root@pyxis-api01 bropenapp]# ./enable_flask.sh
