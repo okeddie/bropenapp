@@ -38,4 +38,7 @@ Also, if you get index issues, ensure that your apache config has the virtualhos
 If mysql is installed, can simply use the start app script:
 - [root@pyxis-api01 bropenapp]# ./enable_flask.sh
 
-
+Lastly, ensure services are enabled if keeping this running:
+- systemctl is-enabled httpd mariadb
+- systemctl enable httpd mariadb
+- systemctl is-enabled httpd mariadb
