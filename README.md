@@ -42,3 +42,6 @@ Lastly, ensure services are enabled if keeping this running:
 - systemctl is-enabled httpd mariadb
 - systemctl enable httpd mariadb
 - systemctl is-enabled httpd mariadb
+
+copy dev into repo:
+- cp -a /srv/bropenstack.com/bropenstack /root/bropenapp/srv/bropenstack.com/
